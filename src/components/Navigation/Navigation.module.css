@@ -6,6 +6,6 @@
   color: #2a363b;
 }
 
-.link.active {
-  color: #e84a5f;
+.link:active {
+  color: #228b22;
 }

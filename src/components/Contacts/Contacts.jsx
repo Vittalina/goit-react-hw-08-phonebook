@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import { ListItem, Button } from 'components/Contacts/Contacts.styled';
+import { ListItem, Button, List } from 'components/Contacts/Contacts.styled';
 import { useDispatch, useSelector } from 'react-redux';
 import { selectContacts, selectSetFilter } from 'redux/contacts/selectors';
 import { deleteContact } from 'redux/contacts/operations';
@@ -20,7 +20,7 @@ const Contacts = () => {
   console.log(filteredNames);
 
   return (
-    <ul>
+    <List>
       {filteredNames.map(contact => (
         <ListItem key={contact.id}>
           <span>
@@ -35,7 +35,7 @@ const Contacts = () => {
           </Button>
         </ListItem>
       ))}
-    </ul>
+    </List>
   );
 };
 

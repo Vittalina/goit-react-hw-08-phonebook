@@ -6,6 +6,14 @@ import Filter from 'components/Filter/Filter';
 import { fetchContacts } from 'redux/contacts/operations';
 import { selectIsLoading } from 'redux/contacts/selectors';
 
+const styles = {
+  container: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+};
+
 export default function ContactsPage() {
   const dispatch = useDispatch();
   const isLoading = useSelector(selectIsLoading);
@@ -17,9 +25,11 @@ export default function ContactsPage() {
   return (
     <>
       <Phonebook />
-      <div>{isLoading && 'Request in progress...'}</div>
-      <Contacts />
+      <div style={styles.container}>
+        {isLoading && 'Request in progress...'}
+      </div>
       <Filter />
+      <Contacts />
     </>
   );
 }
