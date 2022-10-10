@@ -2,8 +2,8 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import { ListItem, Button } from 'components/Contacts/Contacts.styled';
 import { useDispatch, useSelector } from 'react-redux';
-import { selectContacts, selectSetFilter } from 'redux/selectors';
-import { deleteContact } from 'redux/operations';
+import { selectContacts, selectSetFilter } from 'redux/contacts/selectors';
+import { deleteContact } from 'redux/contacts/operations';
 
 const Contacts = () => {
   const dispatch = useDispatch();
@@ -24,7 +24,7 @@ const Contacts = () => {
       {filteredNames.map(contact => (
         <ListItem key={contact.id}>
           <span>
-            {contact.name}: {contact.phone}
+            {contact.name}: {contact.number}
           </span>
           <Button
             type="button"
