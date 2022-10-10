@@ -11,7 +11,7 @@ import {
 
 const Phonebook = () => {
   const [name, setName] = useState('');
-  const [phone, setPhone] = useState('');
+  const [number, setNumber] = useState('');
   const dispatch = useDispatch();
   const contacts = useSelector(selectContacts);
 
@@ -21,7 +21,7 @@ const Phonebook = () => {
         setName(e.currentTarget.value);
         break;
       case 'number':
-        setPhone(e.currentTarget.value);
+        setNumber(e.currentTarget.value);
         break;
       default:
         return;
@@ -30,7 +30,7 @@ const Phonebook = () => {
 
   const reset = () => {
     setName('');
-    setPhone('');
+    setNumber('');
   };
 
   const formSubmitHandle = data => {
@@ -45,7 +45,7 @@ const Phonebook = () => {
 
   const clickOnBtnSubmit = e => {
     e.preventDefault();
-    formSubmitHandle({ name, phone });
+    formSubmitHandle({ name, number });
     reset();
   };
 
@@ -68,7 +68,7 @@ const Phonebook = () => {
         <Input
           type="tel"
           name="number"
-          value={phone}
+          value={number}
           onChange={handleChange}
           pattern="\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}"
           title="Phone number must be digits and can contain spaces, dashes, parentheses and can start with +"
