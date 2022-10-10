@@ -6,14 +6,20 @@ import styled from '@emotion/styled';
 // `;
 
 export const List = styled.ul`
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center; */
   /* align-items: flex-start;
   margin-left: 340px; */
-  margin-top: 0;
+  /* margin-top: 0;
   padding-left: 0;
-  list-style: none;
+  list-style: none; */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: auto;
+  margin-left: auto;
+  width: 220px;
 `;
 
 export const ListItem = styled.li`

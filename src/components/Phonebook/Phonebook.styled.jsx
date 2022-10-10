@@ -9,7 +9,8 @@ export const FormField = styled.form`
 export const Input = styled.input`
   font-family: 'Times New Roman', Times, serif;
   font-size: 18px;
-  width: 100%;
+  /* width: 100%; */
+  width: 220px;
   height: 30px;
   color: black;
   margin-bottom: 5px;
