@@ -1,19 +1,6 @@
 import styled from '@emotion/styled';
 
-// export const UlContainer = styled.div`
-//   margin-right: auto;
-//   margin-left: auto;
-// `;
-
 export const List = styled.ul`
-  /* display: flex;
-  flex-direction: column;
-  align-items: center; */
-  /* align-items: flex-start;
-  margin-left: 340px; */
-  /* margin-top: 0;
-  padding-left: 0;
-  list-style: none; */
   display: flex;
   flex-direction: column;
   align-items: flex-start;

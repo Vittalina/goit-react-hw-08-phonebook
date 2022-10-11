@@ -1,16 +1,18 @@
-.form {
-  width: 280px;
-}
+import styled from '@emotion/styled';
 
-.label {
+export const Form = styled.form`
+  width: 280px;
+`;
+
+export const Label = styled.label`
   display: flex;
   flex-direction: column;
   font-family: 'Times New Roman', Times, serif;
   font-size: 18px;
   margin-bottom: 16px;
-}
+`;
 
-.input {
+export const Input = styled.input`
   font-family: 'Times New Roman', Times, serif;
   font-size: 18px;
   width: 100%;
@@ -18,15 +20,14 @@
   color: black;
   margin-bottom: 5px;
   border-color: grey;
-}
+  &:focus {
+    outline: none;
+    border-color: #228b22;
+    box-shadow: 0 0 10px #228b22;
+  }
+`;
 
-.input:focus {
-  outline: none;
-  border-color: #228b22;
-  box-shadow: 0 0 10px #228b22;
-}
-
-.button {
+export const Button = styled.button`
   display: inline-block;
   width: 65px;
   height: 20px;
@@ -37,4 +38,4 @@
   outline: none;
   border-color: #228b22;
   box-shadow: 0 0 10px #228b22;
-}
+`;

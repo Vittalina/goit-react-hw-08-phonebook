@@ -1,13 +1,16 @@
-.wrapper {
+import styled from '@emotion/styled';
+
+export const Wrapper = styled.div`
   display: flex;
   align-items: center;
   gap: 12px;
-}
+`;
 
-.username {
+export const Username = styled.p`
   font-weight: 700;
-}
-.button {
+`;
+
+export const Button = styled.button`
   display: inline-block;
   width: 56px;
   height: 24px;
@@ -18,4 +21,4 @@
   outline: none;
   border-color: #228b22;
   box-shadow: 0 0 10px #228b22;
-}
+`;
