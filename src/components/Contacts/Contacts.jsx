@@ -4,6 +4,7 @@ import { ListItem, Button, List } from 'components/Contacts/Contacts.styled';
 import { useDispatch, useSelector } from 'react-redux';
 import { selectContacts, selectSetFilter } from 'redux/contacts/selectors';
 import { deleteContact } from 'redux/contacts/operations';
+import DeleteIcon from '@mui/icons-material/Delete';
 
 const Contacts = () => {
   const dispatch = useDispatch();
@@ -31,7 +32,7 @@ const Contacts = () => {
             id={contact.id}
             onClick={() => dispatch(deleteContact(contact.id))}
           >
-            Delete
+            <DeleteIcon />
           </Button>
         </ListItem>
       ))}

@@ -10,4 +10,6 @@ export const StyledNavLink = styled(NavLink)`
   &:active {
     color: #228b22;
   }
+  & svg {
+  }
 `;
