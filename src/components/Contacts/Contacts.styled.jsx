@@ -14,6 +14,19 @@ export const ListItem = styled.li`
   font-size: 18px;
   display: flex;
   align-items: center;
+  /* position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    border-radius: 50%;
+    left: -15%;
+    width: 14px;
+    height: 14px;
+    background: #000;
+  } */
 `;
 
 export const Button = styled.button`
